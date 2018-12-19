@@ -1,0 +1,7 @@
+<app-header (menuSelected)="onNavigate($event)"></app-header>
+<div class="container pull-left">
+<app-lesson *ngIf="loadHeaderMenu === 'lesson'"></app-lesson>
+<app-game *ngIf="loadHeaderMenu === 'game'"></app-game>
+<app-refreshment *ngIf="loadHeaderMenu === 'refreshment'"></app-refreshment>
+</div>
+ 
